@@ -77,9 +77,8 @@ header
 
 main
   margin: 0 auto
-  padding-top: 15px
+  padding: 15px 0 100px
   max-width: 1200px
-  height: 1000px
   background: #C0DBD9
 
   .main-top-content
@@ -132,14 +131,25 @@ main
     display: flex
     justify-content: space-between
     height: 259px
-    margin: 15px 15px 100px
+    margin: 15px 15px 0
     padding: 15px
     background: #88B5BF
 
     .main-bottom-content__item
+      display: flex
+      align-items: center
+      text-align: center
       margin: 15px
       flex-grow: 1
-      background: #0D89B0
+      position: relative
+      &::before
+        content: ""
+        position: absolute
+        display: block
+        width: 100%
+        padding: 39.02% 0
+        transform: rotate(180deg)
+        background: #0D89B0
 
 footer
   margin: 0 auto

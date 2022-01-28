@@ -96,9 +96,8 @@ header div span {
 
 main {
   margin: 0 auto;
-  padding-top: 15px;
+  padding: 15px 0 100px;
   max-width: 1200px;
-  height: 1000px;
   background: #C0DBD9;
 }
 main .main-top-content {
@@ -213,15 +212,32 @@ main .main-bottom-content {
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 259px;
-  margin: 15px 15px 100px;
+  margin: 15px 15px 0;
   padding: 15px;
   background: #88B5BF;
 }
 main .main-bottom-content .main-bottom-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   margin: 15px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  position: relative;
+}
+main .main-bottom-content .main-bottom-content__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  padding: 39.02% 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   background: #0D89B0;
 }
 
